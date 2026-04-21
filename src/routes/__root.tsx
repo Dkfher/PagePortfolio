@@ -29,11 +29,14 @@ export const Route = createRootRoute({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Luis Portfolio" },
+      { title: "Luis Fernando Sierra" },
       { name: "description", content: "Portafolio frontend construido con React y TypeScript." },
       { name: "author", content: "Luis" },
-      { property: "og:title", content: "Luis Portfolio" },
-      { property: "og:description", content: "Portafolio frontend construido con React y TypeScript." },
+      { property: "og:title", content: "Luis Fernando Sierra" },
+      {
+        property: "og:description",
+        content: "Portafolio frontend construido con React y TypeScript.",
+      },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Luis" },

@@ -9,7 +9,7 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Portafolio frontend de Luis con proyectos destacados, integración con GitHub, skills clave y formulario de contacto.",
+          "Portafolio frontend de Luis Fernando Sierra con proyectos destacados, integración con GitHub, skills clave y formulario de contacto.",
       },
       { property: "og:title", content: "Luis — Frontend Developer Portfolio" },
       {
@@ -24,7 +24,7 @@ export const Route = createFileRoute("/")({
           "Portafolio frontend con About, proyectos, skills y contacto, diseñado para despliegue rápido y mantenimiento sencillo.",
       },
     ],
-    links: [{ rel: "canonical", href: "https://id-preview--8e9692d9-846d-49b3-9707-03b3cfc7ef93.lovable.app/" }],
+    links: [{ rel: "canonical", href: "" }],
   }),
   component: Index,
 });

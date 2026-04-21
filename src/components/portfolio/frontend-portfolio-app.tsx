@@ -21,7 +21,7 @@ type ContactFormValues = z.infer<typeof contactSchema>;
 
 const profile = {
   name: "Luis",
-  role: "Frontend Developer",
+  role: "Frontend Specialist",
   location: "Disponible para proyectos remotos y colaboraciones de producto",
   summary:
     "Construyo interfaces rápidas, accesibles y orientadas al detalle, con foco en sistemas de diseño, rendimiento y experiencias claras para producto digital.",
@@ -46,35 +46,46 @@ const highlightedProjects = [
     stack: ["React", "TypeScript", "Tailwind", "Shadcn UI"],
     stats: "Aprendizaje, Interactividad",
     repoUrl: "https://github.com/Dkfher/ScrumbleWords",
-    demoUrl: "https://demo.example.com/scrumble-words",
+    demoUrl: "https://scrumblewordsenglish.netlify.app/",
   },
   {
     name: "Analytics Dashboard",
     description:
       "Dashboard modular con visualización de métricas, filtros avanzados y flujos optimizados para equipos de negocio.",
     stack: ["React.js", "TypeScript", "Shadcn UI", "Tailwind"],
-    stats: "Filtros persistentes y UX data-heavy",
+    stats: "Filtros persistentes y UX",
     repoUrl: "https://github.com/Dkfher/Dashboard",
-    demoUrl: "https://demo.example.com/analytics-dashboard",
+    demoUrl: "https://dashboard.devfher9.workers.dev/",
   },
   {
     name: "Crypto Quote",
     description:
-      "Aplicación que permite convertir cualquier moneda seleccionada en una criptomoneda específica",
+      "Aplicación que permite convertir cualquier moneda seleccionada en una criptomoneda específica en tiempo real",
     stack: ["React", "API REST", "Zustand", "Framer Motion"],
-    stats: "Ideal para consultar equivalencias de divisas",
+    stats: "Consultar de divisas",
     repoUrl: "https://github.com/Dkfher/CryptoQuote",
-    demoUrl: "https://demo.example.com/content-studio",
+    demoUrl: "https://cryptoquotemoney.netlify.app/",
   },
-  // {
-  //   name: "Landing Lab",
-  //   description:
-  //     "Colección de experiencias marketing-first con motion ligero, optimización SEO y componentes listos para campañas.",
-  //   stack: ["Next.js", "Sass", "TypeScript", "SEO"],
-  //   stats: "Conversión, motion y performance",
-  //   repoUrl: "https://github.com/github-username/landing-lab",
-  //   demoUrl: "https://demo.example.com/landing-lab",
-  // },
+  {
+    name: "Afiliación Pensiones",
+    description:
+      "Flujo de afiliación digital simplificado, logrando verificar la viabilidad en segundos.",
+    stack: ["Next.js", "Sass", "TypeScript", "SEO", "Jenkins", "Azure"],
+    stats: "Performance, trazabilidad,Cloud",
+    // repoUrl: "#",
+    demoUrl:
+      "https://servicios.porvenir.com.co/evd-aut-afiliacion-traslado-pension/validacion-identidad",
+  },
+  {
+    name: "Afiliación Cesantias",
+    description:
+      "Flujo de afiliación digital que simplifica el registro de usuarios mediante firma electrónica e integración de beneficios corporativos.",
+    stack: ["Next.js", "Sass", "TypeScript", "SEO", "Jenkins", "Azure"],
+    stats: "Performance, trazabilidad,Cloud",
+    // repoUrl: "#",
+    demoUrl:
+      "https://servicios.porvenir.com.co/cdc/front/cesantias/autogestionado/validacion-viabilidad",
+  },
 ];
 
 type SkillIconProps = {
@@ -242,7 +253,7 @@ export function FrontendPortfolioApp() {
 
   const metrics = useMemo(
     () => [
-      { label: "Proyectos", value: "3" },
+      { label: "Proyectos", value: "5" },
       { label: "Skills clave", value: "7" },
       { label: "Enfoque", value: "UX + Performance" },
     ],
@@ -269,9 +280,9 @@ export function FrontendPortfolioApp() {
             className="flex items-center gap-3 text-sm font-semibold tracking-[0.16em] text-foreground"
           >
             <span className="flex h-10 w-10 items-center justify-center rounded-full border border-border bg-surface text-sm text-brand hero-glow">
-              LP
+              LS
             </span>
-            <span className="hidden sm:block">Luis Portfolio</span>
+            <span className="hidden sm:block">Luis Fernando Sierra</span>
           </a>
 
           <nav className="hidden items-center gap-2 md:flex" aria-label="Navegación principal">
@@ -329,7 +340,7 @@ export function FrontendPortfolioApp() {
             <div className="space-y-8">
               <div className="inline-flex items-center gap-2 rounded-full border border-border bg-surface px-4 py-2 text-sm text-muted-foreground shadow-[var(--shadow-soft)]">
                 <Sparkles className="size-4 text-brand" />
-                Frontend con criterio de producto
+                Software Engineer con criterio de producto
               </div>
 
               <div className="space-y-5">
@@ -405,7 +416,7 @@ export function FrontendPortfolioApp() {
                 <div className="rounded-xl border border-border bg-surface p-5">
                   <p className="text-sm text-muted-foreground">Especialidad</p>
                   <p className="mt-2 text-lg font-semibold text-foreground">
-                    React / Next.js / TypeScript
+                    React / Next.js / TypeScript / Microfrontends
                   </p>
                 </div>
                 <div className="rounded-xl border border-border bg-surface p-5">
@@ -428,7 +439,7 @@ export function FrontendPortfolioApp() {
           <Reveal>
             <SectionHeading
               eyebrow="Proyectos"
-              title="Selección de proyectos frontend"
+              title="Selección de proyectos"
               description="Una muestra de proyectos seleccionados por su enfoque en diseño de interfaces, rendimiento, mantenibilidad y experiencia de usuario."
             />
           </Reveal>
@@ -444,9 +455,6 @@ export function FrontendPortfolioApp() {
                       </p>
                       <h3 className="mt-2 text-xl font-semibold text-foreground">{project.name}</h3>
                     </div>
-                    <span className="rounded-full border border-border bg-surface px-3 py-1 text-xs font-semibold uppercase tracking-[0.16em] text-brand">
-                      Manual
-                    </span>
                   </div>
 
                   <p className="mt-4 text-sm leading-7 text-muted-foreground">
@@ -474,7 +482,7 @@ export function FrontendPortfolioApp() {
                     </Button>
                     <Button asChild variant="panel">
                       <a href={project.demoUrl} target="_blank" rel="noreferrer">
-                        Demo
+                        Visitar
                         <ExternalLink />
                       </a>
                     </Button>
