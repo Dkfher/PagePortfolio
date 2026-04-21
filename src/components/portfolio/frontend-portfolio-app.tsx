@@ -25,10 +25,10 @@ const profile = {
   location: "Disponible para proyectos remotos y colaboraciones de producto",
   summary:
     "Construyo interfaces rápidas, accesibles y orientadas al detalle, con foco en sistemas de diseño, rendimiento y experiencias claras para producto digital.",
-  githubUsername: "github-username",
-  githubUrl: "https://github.com/Dkfher",
-  linkedinUrl: "https://www.linkedin.com/in/luis-fernando-sierra-cantor-551893144",
-  email: "hola@tuportfolio.dev",
+  githubUsername: import.meta.env.VITE_USERNAME,
+  githubUrl: import.meta.env.VITE_GITHUB_URL,
+  linkedinUrl: import.meta.env.VITE_LINKEDIN_URL,
+  email: import.meta.env.VITE_EMAIL,
 };
 
 const navigationItems = [
@@ -45,8 +45,8 @@ const highlightedProjects = [
       "Aplicación interactiva diseñada para aprender y practicar verbos en inglés de manera divertida y dinámica.",
     stack: ["React", "TypeScript", "Tailwind", "Shadcn UI"],
     stats: "Aprendizaje, Interactividad",
-    repoUrl: "https://github.com/Dkfher/ScrumbleWords",
-    demoUrl: "https://scrumblewordsenglish.netlify.app/",
+    repoUrl: import.meta.env.VITE_PROJECT_SCRUMBLE_REPO,
+    demoUrl: import.meta.env.VITE_PROJECT_SCRUMBLE_DEMO,
   },
   {
     name: "Analytics Dashboard",
@@ -54,8 +54,8 @@ const highlightedProjects = [
       "Dashboard modular con visualización de métricas, filtros avanzados y flujos optimizados para equipos de negocio.",
     stack: ["React.js", "TypeScript", "Shadcn UI", "Tailwind"],
     stats: "Filtros persistentes y UX",
-    repoUrl: "https://github.com/Dkfher/Dashboard",
-    demoUrl: "https://dashboard.devfher9.workers.dev/",
+    repoUrl: import.meta.env.VITE_PROJECT_DASHBOARD_REPO,
+    demoUrl: import.meta.env.VITE_PROJECT_DASHBOARD_DEMO,
   },
   {
     name: "Crypto Quote",
@@ -63,8 +63,8 @@ const highlightedProjects = [
       "Aplicación que permite convertir cualquier moneda seleccionada en una criptomoneda específica en tiempo real",
     stack: ["React", "API REST", "Zustand", "Framer Motion"],
     stats: "Consultar de divisas",
-    repoUrl: "https://github.com/Dkfher/CryptoQuote",
-    demoUrl: "https://cryptoquotemoney.netlify.app/",
+    repoUrl: import.meta.env.VITE_PROJECT_CRYPTO_REPO,
+    demoUrl: import.meta.env.VITE_PROJECT_CRYPTO_DEMO,
   },
   {
     name: "Afiliación Pensiones",
@@ -73,8 +73,7 @@ const highlightedProjects = [
     stack: ["Next.js", "Sass", "TypeScript", "SEO", "Jenkins", "Azure"],
     stats: "Performance, trazabilidad,Cloud",
     // repoUrl: "#",
-    demoUrl:
-      "https://servicios.porvenir.com.co/evd-aut-afiliacion-traslado-pension/validacion-identidad",
+    demoUrl: import.meta.env.VITE_PROJECT_AFILIACION_PENSIONES_DEMO,
   },
   {
     name: "Afiliación Cesantias",
@@ -83,8 +82,7 @@ const highlightedProjects = [
     stack: ["Next.js", "Sass", "TypeScript", "SEO", "Jenkins", "Azure"],
     stats: "Performance, trazabilidad,Cloud",
     // repoUrl: "#",
-    demoUrl:
-      "https://servicios.porvenir.com.co/cdc/front/cesantias/autogestionado/validacion-viabilidad",
+    demoUrl: import.meta.env.VITE_PROJECT_AFILIACION_CESANTIAS_DEMO,
   },
 ];
 
