@@ -19,6 +19,7 @@ const contactSchema = z.object({
 
 type ContactFormValues = z.infer<typeof contactSchema>;
 
+//Descripcion
 const profile = {
   name: "Luis",
   role: "Frontend Specialist",
