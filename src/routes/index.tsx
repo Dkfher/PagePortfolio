@@ -24,7 +24,7 @@ export const Route = createFileRoute("/")({
           "Portafolio frontend con About, proyectos, skills y contacto, diseñado para despliegue rápido y mantenimiento sencillo.",
       },
     ],
-    links: [{ rel: "canonical", href: "" }],
+    links: [{ rel: "canonical", href: "https://portfolio.devfher9.workers.dev/" }],
   }),
   component: Index,
 });
